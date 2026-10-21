@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tu Taller · Chapa, pintura y mecánica en tu ciudad (demo)</title>
+<meta name="description" content="Demo de web para talleres de chapa, pintura y mecánica, creada por Alex.">
+<meta name="theme-color" content="#1b1c1e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231b1c1e'/%3E%3Cpath d='M9 25V7h8a6 6 0 010 12h-4v6z' fill='%23ff5b1f'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/franja-propuesta.css">
+<link rel="stylesheet" href="assets/css/taller.css">
+<style>:root{--fire:#ff5b1f;--proto-bg:#ff5b1f}</style>
+</head>
+<body>
+<div class="proto-bar" role="note"><strong>Demo de diseño — creada por Alex</strong> · Negocio ficticio y datos de ejemplo · ¿Quieres una web así para tu taller? <a href="mailto:valorgonzalezalex@gmail.com">valorgonzalezalex@gmail.com</a></div>
+
+<header class="top">
+  <a class="mark" href="#inicio" aria-label="Tu Taller, inicio">
+    <span class="mark-name">TU TALLER</span>
+    <span class="mark-sub">CHAPA · PINTURA · MECÁNICA</span>
+  </a>
+  <nav class="menu" aria-label="Principal">
+    <a href="#diagnostico">¿Qué le pasa?</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#proceso">Chapa y pintura</a>
+    <a href="#taller">Taller</a>
+  </nav>
+  <a class="call" href="#taller"><span class="call-dot"></span>91 000 00 00</a>
+</header>
+
+<main id="inicio">
+  <!-- INTRO: el vídeo (o su respaldo) recorre la cabina de pintura -->
+  <section class="intro" data-scrub data-src="assets/intro.mp4" aria-label="Presentación">
+    <div class="stage" data-scrub-stage>
+      <video muted playsinline preload="auto" aria-hidden="true"></video>
+      <canvas class="fallback" aria-hidden="true"></canvas>
+      <div class="grain" aria-hidden="true"></div>
+      <div class="ticket" aria-hidden="true">
+        <span>O.T. Nº 0001</span><span>TU CIUDAD</span><span class="ticket-step">RECEPCIÓN</span>
+      </div>
+      <div class="words">
+        <h1 class="sr-only">Tu Taller: del golpe al brillo. Chapa, pintura y mecánica en tu ciudad.</h1>
+        <p class="w w1" aria-hidden="true">Golpe.</p>
+        <p class="w w2" aria-hidden="true">Chapa.</p>
+        <p class="w w3" aria-hidden="true">Pintura.</p>
+        <p class="w w4" aria-hidden="true">Brillo.</p>
+      </div>
+      <div class="intro-foot">
+        <p>Chapa, pintura y mecánica con cabina y horno propios.</p>
+        <span class="scroll-cue">Desliza</span>
+      </div>
+      <div class="meter" aria-hidden="true"><i></i></div>
+    </div>
+  </section>
+
+  <!-- CABECERA EDITORIAL CON FOTO -->
+  <section class="lead">
+    <div class="lead-grid">
+      <div class="lead-text">
+        <p class="tag">Taller multimarca · Demo de diseño</p>
+        <h2 class="lead-title">Del golpe<br>al <em>brillo</em>.</h2>
+        <p class="lead-p">Chapa y pintura con cabina y horno, mecánica general y pre-ITV. Particulares, empresas y flotas. Tramitamos el parte con tu aseguradora y, mientras tanto, no te quedas a pie.</p>
+        <div class="lead-cta">
+          <a class="btn btn-fire" href="#diagnostico">Cuéntanos qué le pasa</a>
+          <a class="btn btn-line" href="#taller">Cómo llegar</a>
+        </div>
+      </div>
+      <figure class="lead-photo">
+        <img src="assets/img/cabina-5.jpg" alt="Coche recién pintado en una cabina de pintura" loading="lazy">
+        <figcaption><span>FIG. 01</span> Cabina de pintura con horno de secado</figcaption>
+        <span class="stamp">Acabado<br>de fábrica</span>
+      </figure>
+    </div>
+    <dl class="facts">
+      <div><dt><span data-count="25">0</span>+</dt><dd>años de oficio</dd></div>
+      <div><dt><span data-count="4.8" data-dec="1">0</span>★</dt><dd>valoración en Google</dd></div>
+      <div><dt><span data-count="4">0</span></dt><dd>aseguradoras concertadas</dd></div>
+      <div><dt><span data-count="2">0</span></dt><dd>naves propias</dd></div>
+    </dl>
+  </section>
+
+  <!-- CINTA DE SERVICIOS -->
+  <div class="ticker" aria-hidden="true"><div class="ticker-in">
+    <span>Chapa</span><span>Pintura al horno</span><span>Mecánica</span><span>Pre-ITV</span><span>Lunas y tintado</span><span>Coche de sustitución</span><span>Recogida y entrega</span>
+    <span>Chapa</span><span>Pintura al horno</span><span>Mecánica</span><span>Pre-ITV</span><span>Lunas y tintado</span><span>Coche de sustitución</span><span>Recogida y entrega</span>
+  </div></div>
+
+  <!-- DIAGNÓSTICO: hoja de recepción interactiva -->
+  <section id="diagnostico" class="diag">
+    <div class="sheet">
+      <header class="sheet-head">
+        <span>HOJA DE RECEPCIÓN</span><span>01 / ¿QUÉ LE PASA A TU COCHE?</span>
+      </header>
+      <div class="sheet-body">
+        <div class="symptoms" role="radiogroup" aria-label="Elige el síntoma">
+          <button type="button" role="radio" aria-checked="true" data-k="golpe">Tiene un golpe o un rayón</button>
+          <button type="button" role="radio" aria-checked="false" data-k="frenos">Suena al frenar</button>
+          <button type="button" role="radio" aria-checked="false" data-k="testigo">Se ha encendido un testigo</button>
+          <button type="button" role="radio" aria-checked="false" data-k="itv">Le toca la ITV</button>
+          <button type="button" role="radio" aria-checked="false" data-k="luna">La luna está picada</button>
+          <button type="button" role="radio" aria-checked="false" data-k="revision">Toca revisión</button>
+        </div>
+        <div class="verdict" aria-live="polite">
+          <p class="v-label">Lo que haremos</p>
+          <h3 class="v-title">Peritación, chapa y pintura</h3>
+          <p class="v-text">Lo vemos contigo, gestionamos el parte con tu seguro y lo devolvemos con el color igualado en cabina. Si lo necesitas, te dejamos coche de sustitución.</p>
+          <p class="v-time"><span>Tiempo orientativo</span><b>según daño · presupuesto sin compromiso</b></p>
+          <a class="btn btn-fire" href="#taller">Llamar al taller</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS: foto fija + ficha técnica -->
+  <section id="servicios" class="specs">
+    <div class="specs-grid">
+      <div class="specs-side">
+        <div class="specs-head">
+          <p class="tag">02 / Servicios</p>
+          <h2>Todo lo que tu coche necesita, bajo un techo.</h2>
+        </div>
+        <figure class="specs-photo"><img src="assets/img/cabina-6.jpg" alt="Lateral de un coche con pintura brillante" loading="lazy"></figure>
+      </div>
+      <ol class="spec-list">
+        <li><span class="n">01</span><h3>Chapa</h3><p>Reparación de golpes, abolladuras y sustitución de piezas de carrocería.</p></li>
+        <li><span class="n">02</span><h3>Pintura en cabina con horno</h3><p>Igualación de color y secado al horno para un acabado de fábrica.</p></li>
+        <li><span class="n">03</span><h3>Mecánica general</h3><p>Frenos, embrague, distribución, suspensión, diagnosis y averías.</p></li>
+        <li><span class="n">04</span><h3>Mantenimiento y revisiones</h3><p>Aceite, filtros y puntos de revisión según el plan de tu fabricante.</p></li>
+        <li><span class="n">05</span><h3>Pre-ITV</h3><p>Lo revisamos antes de la inspección para que pase a la primera.</p></li>
+        <li><span class="n">06</span><h3>Lunas y tintado</h3><p>Sustitución de lunas y tintado de cristales.</p></li>
+        <li><span class="n">07</span><h3>Recogida y entrega</h3><p>Pasamos a por tu coche y te lo devolvemos terminado. Consúltanos.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- PROCESO: imagen fija que cambia con cada paso -->
+  <section id="proceso" class="process">
+    <div class="process-head">
+      <p class="tag">03 / Chapa y pintura</p>
+      <h2>Así pasa tu coche<br>por el taller.</h2>
+    </div>
+    <div class="story">
+      <div class="story-media" aria-hidden="true">
+        <img src="assets/img/cabina-1.jpg" alt="" class="on" loading="lazy">
+        <img src="assets/img/cabina-2.jpg" alt="" loading="lazy">
+        <img src="assets/img/cabina-3.jpg" alt="" loading="lazy">
+        <img src="assets/img/cabina-4.jpg" alt="" loading="lazy">
+        <img src="assets/img/cabina-6.jpg" alt="" loading="lazy">
+        <span class="story-step">PASO <b>01</b> / 05</span>
+        <span class="story-bar"><i></i></span>
+      </div>
+      <ol class="story-steps">
+        <li class="on"><span class="n">01</span><b>Recepción</b><p>Revisamos el daño contigo, hacemos fotos y abrimos la orden de trabajo.</p></li>
+        <li><span class="n">02</span><b>Peritación</b><p>Coordinamos con el perito de tu aseguradora o te damos presupuesto cerrado.</p></li>
+        <li><span class="n">03</span><b>Chapa y aparejo</b><p>Desmontaje, enderezado o sustitución de piezas, y capa de aparejo.</p></li>
+        <li><span class="n">04</span><b>Cabina y horno</b><p>Color igualado, barniz y secado al horno para que dure como el de fábrica.</p></li>
+        <li><span class="n">05</span><b>Entrega</b><p>Montaje, control final y lavado. Listo para la carretera.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- IGUALACIÓN: antes/después + color -->
+  <section class="match" aria-label="Igualación de color">
+    <div class="match-copy">
+      <p class="tag">Igualación de color</p>
+      <h2>Del aparejo gris al tono de fábrica.</h2>
+      <p>Arrastra para comparar el aparejo con la pintura terminada y elige un color.</p>
+      <div class="chip-row" role="radiogroup" aria-label="Color de pintura">
+        <button type="button" class="chip" role="radio" aria-checked="true" style="--c:#c4501d" data-f="none" data-name="Naranja cobre">Cobre</button>
+        <button type="button" class="chip" role="radio" aria-checked="false" style="--c:#9e1218" data-f="hue-rotate(-18deg) saturate(1.25) brightness(.85)" data-name="Rojo intenso">Rojo</button>
+        <button type="button" class="chip" role="radio" aria-checked="false" style="--c:#1d3b78" data-f="hue-rotate(195deg) saturate(1.1) brightness(.8)" data-name="Azul metalizado">Azul</button>
+        <button type="button" class="chip" role="radio" aria-checked="false" style="--c:#b9bcc1" data-f="grayscale(1) brightness(1.15) contrast(1.05)" data-name="Gris plata">Plata</button>
+        <button type="button" class="chip" role="radio" aria-checked="false" style="--c:#121314" data-f="grayscale(1) brightness(.42) contrast(1.6)" data-name="Negro profundo">Negro</button>
+      </div>
+    </div>
+    <div class="compare" aria-label="Comparativa: aparejo frente a pintura terminada; arrastra para comparar">
+      <img class="cmp-before" src="assets/img/cabina-4.jpg" alt="" loading="lazy">
+      <div class="cmp-after"><img src="assets/img/cabina-4.jpg" alt="" loading="lazy"></div>
+      <div class="cmp-line"><span></span></div>
+      <span class="cmp-tag l">Aparejo</span><span class="cmp-tag r">Terminado · <b class="cmp-name">Naranja cobre</b></span>
+    </div>
+  </section>
+
+  <!-- ASEGURADORAS Y VENTAJAS -->
+  <section class="insure">
+    <div class="ins-left">
+      <p class="tag">04 / Con tu seguro</p>
+      <h2>Te ahorramos el papeleo.</h2>
+      <p>Somos taller concertado: hablamos con tu aseguradora y con el perito para que tú solo tengas que traer el coche.</p>
+      <ul class="ins-names">
+        <li>Aseguradora A</li><li>Aseguradora B</li><li>Aseguradora C</li><li>Aseguradora D</li>
+      </ul>
+      <p class="small">¿Tu compañía no está en la lista? Llámanos y lo miramos.</p>
+    </div>
+    <ul class="perks">
+      <li><b>Coche de sustitución</b><span>Para que sigas con tu día.</span></li>
+      <li><b>Recogida y entrega</b><span>Si no puedes acercarte, vamos nosotros.</span></li>
+      <li><b>Presupuesto sin compromiso</b><span>Antes de tocar nada, sabes lo que cuesta.</span></li>
+      <li><b>Taxis y empresas</b><span>Atendemos flotas y vehículos de empresa.</span></li>
+    </ul>
+  </section>
+
+  <!-- LO QUE DESTACAN LOS CLIENTES (resumen, no citas) -->
+  <section class="voices">
+    <p class="tag">Lo que más repiten quienes nos dejan su opinión</p>
+    <ul class="voice-words">
+      <li>el acabado</li><li>la rapidez</li><li>el coche de cortesía</li><li>encontrar la avería</li><li>el trato</li>
+    </ul>
+    <p class="small">Valoración media 4,8 en Google.</p>
+  </section>
+
+  <!-- TALLER: dirección y horario -->
+  <section id="taller" class="shop">
+    <div class="shop-card">
+      <p class="tag">05 / El taller</p>
+      <h2>Cerca de ti.</h2>
+      <address>
+        Calle de Ejemplo, 1<br>28000 Tu ciudad (Madrid)
+      </address>
+      <table class="hours">
+        <caption>Horario</caption>
+        <tr><th scope="row">Lunes a viernes</th><td>8:00–14:00 · 15:00–19:00</td></tr>
+        <tr><th scope="row">Sábado</th><td>9:00–13:00</td></tr>
+        <tr><th scope="row">Domingo</th><td>Cerrado</td></tr>
+      </table>
+      <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=taller+chapa+y+pintura" rel="noopener" target="_blank">Abrir en Google Maps</a>
+    </div>
+    <div class="shop-contact">
+      <a class="big-tel" href="#taller"><small>Taller</small>91 000 00 00</a>
+      <a class="big-tel" href="#taller"><small>Móvil</small>600 00 00 00</a>
+    </div>
+  </section>
+</main>
+
+<nav class="callbar" aria-label="Contacto rápido">
+  <a href="#taller">Llamar</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=taller+chapa+y+pintura" target="_blank" rel="noopener">Cómo llegar</a>
+</nav>
+
+<footer class="foot">
+  <span class="mark-name">TU TALLER</span>
+  <p>Tu Taller (demo) · Chapa, pintura y mecánica · tu ciudad</p>
+  <p class="small">Web de demostración creada por Alex. Negocio ficticio y datos de ejemplo.</p>
+</footer>
+
+<script src="assets/js/scroll-intro.js"></script>
+<script src="assets/js/taller.js"></script>
+</body>
+</html>
